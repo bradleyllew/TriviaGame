@@ -47,11 +47,11 @@ $(function () {
     console.log(questions);
 
     function displayQuestions () {
-        var question = questions[currentQuestion].question;
-        var choices = questions[currentQuestion].choices;
+        var question = triviaQuestions[currentQuestion].question;
+        var choices = triviaQuestions[currentQuestion].choices;
         $("#trivia").html('<h3>' + question + '<h3>');
         $("#trivia").html('<h3>' + choices + '<h3>');
-
+        $(displayChoices(choices));
     }
     displayQuestions(); 
     
@@ -64,9 +64,10 @@ $(function () {
         for (var i =0; i < choices.length; i++) {
         result += '<p class ="choice" data-answers="${choices[i]">${choices[i]}></p>'
         }
+        // method: "GET";  TRY TO USE THIS?
         return result;
     }
-    displayChoices([i]);
+    // displayChoices([i++]);
     
 
 
