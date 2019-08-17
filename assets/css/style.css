@@ -1,30 +1,38 @@
-.jumbotron, .start {
+.header {
     text-align: center;
-    color: #CB4B16;
-    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;  */
+    color: white;
+    background-color: #093C40;
+    padding-top: 3%;
+    margin-top: 2%;
 } 
 
-
-/* TOO DISTRACTING FOR NOW */
-/* @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}  */
-.choice {
-    padding: 3%;
-    border: solid darkmagenta;
+.start {
+    color: white;
+    background-color: #343591;
+    border-color: #343591;
 }
+
+.choice {
+    color: white;
+    background-color: #2AABA1;
+    padding: 3%;
+    border: solid #2AABA1;
+}
+
+#trivia {
+    color: white;
+}
+
 #timer {
-    color: #CB4B16;
+    background-color: #28AA54;
     text-align: center;
-    background-color: antiquewhite;
+    color: antiquewhite;
+}
+
+#results {
+    text-align: center;
+    color: white;
+    background-color: #2BB6DA;
 }
 
 .form-radio 

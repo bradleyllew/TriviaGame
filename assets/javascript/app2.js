@@ -1,6 +1,6 @@
 $(function () {
 
-    var seconds = 5;
+    var seconds = 11;
     var currentQuestion = 0;
     var correct = 0;
     var wrong = 0;
@@ -16,6 +16,9 @@ $(function () {
         var outOfQquestions = (triviaQuestions.length - 1) === currentQuestion;
 
         if (outOfQquestions) {
+            clearInterval(timer);
+            // $("#timer").text("0");
+            $("#timer").hide();
             console.log("All done!");
             displayResult();
         } else {
@@ -33,7 +36,7 @@ $(function () {
     function playGame() {
 
 
-        seconds = 5;
+        seconds = 11;
         clearInterval(timer);
         timer = setInterval(decrement, 1000);
 
@@ -95,8 +98,8 @@ $(function () {
 
     function displayResult() {
         var result = `
-        <p>You got ${correct} question(s) right</p>
-        <p>You got ${wrong} question(s) wrong</p>`;
+        <p><h1>You got ${correct} right</h1></p>
+        <p><h1>You got ${wrong} wrong</h1></p>`;
 
         // <button id="reset">Reset</button>
 
