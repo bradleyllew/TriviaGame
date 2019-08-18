@@ -5,6 +5,7 @@ $(function () {
     var correct = 0;
     var wrong = 0;
     var timer;
+    
 
     $(".start").on("click", function () {
         $(this).hide();
@@ -21,6 +22,8 @@ $(function () {
             $("#timer").hide();
             console.log("All done!");
             displayResult();
+            
+            
         } else {
             currentQuestion++;
             playGame();
